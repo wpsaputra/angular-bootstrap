@@ -1,3 +1,5 @@
+import { FormComponent } from './components/form/form.component';
+import { ChartComponent } from './components/chart/chart.component';
 import { SidebarDirective } from './directives/sidebar.directive';
 import { LayoutComponent } from './components/layout/layout.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +13,9 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     LayoutComponent,
-    SidebarDirective
+    SidebarDirective,
+    ChartComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
