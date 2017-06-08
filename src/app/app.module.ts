@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing';
 import { FormComponent } from './components/form/form.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { SidebarDirective } from './directives/sidebar.directive';
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
