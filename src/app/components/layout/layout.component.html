@@ -14,7 +14,8 @@
             <ul class="nav">
                 <li class="nav-item">
                     <!--<a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>-->
-                    <a class="nav-link" routerLinkActive="active"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/form']" (click)="breadcrumb.ngOnInit()"><i class="icon-speedometer"></i> Dashboard</a>
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['/chart']" (click)="breadcrumb.ngOnInit()"><i class="icon-chart"></i> Chart</a>
                 </li>
             </ul>
         </nav>
@@ -25,6 +26,7 @@
 
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
+            <breadcrumbs #breadcrumb></breadcrumbs>
             <!--<app-breadcrumbs></app-breadcrumbs>-->
         </ol>
 
@@ -38,6 +40,6 @@
 
 <footer class="app-footer">
     <a href="http://coreui.io">CoreUI</a> &copy; 2017 creativeLabs.
-    <span class="float-right">Powered by <a href="http://coreui.io">CoreUI</a>
-    </span>
+    <!--<span class="float-right">Powered by <a href="http://coreui.io">CoreUI</a>
+    </span>-->
 </footer>
