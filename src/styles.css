@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.app-footer {
+    min-height: 50px;
+    padding: 0 1rem;
+    line-height: 50px;
+    color: #263238;
+    background: #eceff1;
+    border-top: 1px solid #cfd8dc;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
